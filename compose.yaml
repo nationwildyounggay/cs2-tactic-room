@@ -1,0 +1,11 @@
+services:
+  tactic:
+    build: .
+    ports:
+      - "${TACTIC_PORT:-3000}:3000"
+    volumes:
+      - tactic-data:/app/data
+    restart: unless-stopped
+    init: true
+volumes:
+  tactic-data:

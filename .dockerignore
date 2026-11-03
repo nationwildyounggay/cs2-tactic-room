@@ -1,0 +1,10 @@
+node_modules
+.pnpm-store
+data
+test-results
+playwright-report
+artifacts
+tests
+.git
+*.log
+.DS_Store
